@@ -1,0 +1,1 @@
+export const API_URL = 'https://digi-api.com/api/v1/digimon?page='

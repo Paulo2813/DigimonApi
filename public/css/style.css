@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+.search{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.paginacion .pagina {
+    background-color: #f9c4d2; 
+    width: 30px; 
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%; 
+    font-size: 14px; 
+    font-weight: bold; 
+    color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.paginacion .pagina:hover {
+    background-color: #f06d6d; 
+    transform: scale(1.1); 
+}
+
+.paginacion button {
+    padding: 8px 16px; 
+    border: 2px solid #f06d6d; 
+    background-color: #fff;
+    color: #f06d6d; 
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.paginacion button:hover {
+    background-color: #f06d6d;
+    color: #fff; 
+}
+
+.paginacion button:disabled {
+    background-color: #e0e0e0;
+    color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+
+
+.sonido {
+    position: absolute;
+    top: 20px; 
+    right: 20px;  
+    padding: 10px 20px;
+    background-color: #f04e45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sonido:hover {
+    background-color: #c0392b;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #f06d6d;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+    color: #fff; 
+}

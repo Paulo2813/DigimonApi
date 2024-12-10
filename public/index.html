@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Api Digimon</title>
+    <script type=module src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <main>
+        <h1>Api Digimon</h1>
+        <button class="sonido" id="botonMute">
+            <i id="iconoSonido" class="fas fa-volume-up"></i>
+        </button>
+        <div class="card" id="card">
+        </div>
+        <div class="paginacion">
+            <button id="atras">Atras</button>
+            <p class="pagina" id="pagina">0</p>
+            <button id="adelante">Adelante</button>
+        </div>
+        <audio id="miAudio" autoplay loop>
+            <source src="op.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Desarrollado por <a href="https://github.com/Paulo2813" target="_blank">Paulo Távara Urbina</a></p>
+            <p>Visita mi <a href="https://github.com/Paulo2813" target="_blank">GitHub</a>Repositorio</p>
+        </div>
+    </footer>    
+</body>
+</html>
