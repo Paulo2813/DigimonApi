@@ -64,7 +64,10 @@ const audio = document.getElementById('miAudio');
 const botonAudio = document.getElementById('botonMute');
 const iconoSonido = document.getElementById('iconoSonido'); 
 
+
+
 botonAudio.addEventListener('click', () => {
+    console.log("Botón de sonido clickeado");
     if (audio.muted) {
         audio.muted = false;
         iconoSonido.classList.replace('fa-volume-mute', 'fa-volume-up');
@@ -73,5 +76,6 @@ botonAudio.addEventListener('click', () => {
         iconoSonido.classList.replace('fa-volume-up', 'fa-volume-mute'); 
     }
 });
+
 
 
