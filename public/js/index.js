@@ -34,13 +34,30 @@ function pagination(){
 
     mostrarDigimons(currentPage);
     page2.textContent = `${currentPage}`
+
+    function updateButtonVisibility() {
+        if (currentPage <= 0) {
+            bottonAtras.classList.add('hidden');
+        } else {
+            bottonAtras.classList.remove('hidden');
+        }
+
+        if (currentPage >= totalPages) {
+            bottonAdelante.classList.add('hidden');
+        } else {
+            bottonAdelante.classList.remove('hidden');
+        }
+    }
+
+    updateButtonVisibility();
     bottonAtras.addEventListener('click',()=>{
         if(currentPage>0){
             currentPage-=1;
             page2.textContent = `${currentPage}`
             mostrarDigimons(currentPage);
+            updateButtonVisibility();
         }else{
-            alert("es la primeroa pagina")
+            alert("no puedes retroceder más genio")
         }
     });
 
@@ -49,8 +66,9 @@ function pagination(){
             currentPage+=1;
             page2.textContent = `${currentPage}`
             mostrarDigimons(currentPage);
+            updateButtonVisibility();
         }else{
-            console.log("es la ultima pagina")
+            alert("llegaste al fin")
         }
 
 
